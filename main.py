@@ -7,7 +7,15 @@ from threading import Thread
 
 class MainAgent:
     def __init__(self) -> None:
-        self.screenshot = None
+        self.agent = []
+        self.fishing_tread = None
+
+        self.cur_img = None
+        self.cur_imgHSV= None
+        
+        self.zone = "Feralas"
+        self.time = "night"
+        
 
         print(" MainAgent setup complete...")
 
